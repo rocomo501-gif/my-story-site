@@ -104,7 +104,9 @@ gap:30px;
 }
 
 .card{
-background:#15151d;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(14px);
+border:1px solid rgba(255,255,255,0.12);
 border-radius:25px;
 overflow:hidden;
 transition:0.3s;
@@ -112,8 +114,11 @@ box-shadow:0 0 20px rgba(255,255,255,0.05);
 }
 
 .card:hover{
+box-shadow:0 0 40px rgba(123,135,255,0.35);
 transform:translateY(-10px);
 }
+
+
 
 .card img{
 width:100%;
