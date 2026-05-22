@@ -398,6 +398,20 @@ box-shadow:0 0 45px rgba(123,135,255,1);
 Reverse Harem Fantasy Project
 
 </footer>
+<script>
+const faders=document.querySelectorAll('.fade-in');
 
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add('show');
+}
+});
+});
+
+faders.forEach(el=>{
+observer.observe(el);
+});
+</script>
 </body>
 </html>
