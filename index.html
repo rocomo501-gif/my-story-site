@@ -32,14 +32,35 @@ linear-gradient(135deg,#03040a,#0b1020,#151030,#071421,#020305);
 background-attachment:fixed;
 background-size:cover;
 
-
+animation:bgAurora 14s ease-in-out infinite alternate;
+background-size:140% 140%;
 
 
 
 color:white;
 overflow-x:hidden;
 }
-
+@keyframes bgAurora{
+0%{
+background-position:0% 0%;
+}
+100%{
+background-position:100% 100%;
+}
+}
+.cursor-glow{
+position:fixed;
+width:180px;
+height:180px;
+background:radial-gradient(circle, rgba(120,180,255,0.35), transparent 70%);
+border-radius:50%;
+pointer-events:none;
+transform:translate(-50%, -50%);
+z-index:9999;
+mix-blend-mode:screen;
+filter:blur(12px);
+transition:left 0.08s linear, top 0.08s linear;
+}  
 header{
 position:fixed;
 top:0;
@@ -870,6 +891,22 @@ document.body.appendChild(particle);
 흑룡 신수. 압도적인 힘과 독점욕으로 유저를 지배하려 한다.
 </p>
 </section>
+  <div class="cursor-glow"></div>
+
+<script>
+const glow = document.querySelector(".cursor-glow");
+
+document.addEventListener("mousemove", (e) => {
+glow.style.left = e.clientX + "px";
+glow.style.top = e.clientY + "px";
+});
+
+document.addEventListener("touchmove", (e) => {
+const touch = e.touches[0];
+glow.style.left = touch.clientX + "px";
+glow.style.top = touch.clientY + "px";
+});
+</script>
 </body>
 </html>
-!important
+
