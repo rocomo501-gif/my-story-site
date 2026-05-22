@@ -147,7 +147,25 @@ box-shadow:0 0 20px rgba(123,135,255,0.35);
 box-shadow:0 0 40px rgba(123,135,255,0.35);
 transform:translateY(-10px);
 }
+.detail-page{
+min-height:100vh;
+padding:140px 30px;
+background:rgba(0,0,0,0.35);
+backdrop-filter:blur(12px);
+border-top:1px solid rgba(255,255,255,0.1);
+}
 
+.detail-page h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.detail-page p{
+font-size:22px;
+line-height:1.8;
+color:#d5d5d5;
+max-width:900px;
+}
 
 
 .card img{
@@ -449,5 +467,32 @@ faders.forEach(el=>{
 observer.observe(el);
 });
 </script>
+  <section id="seolbaek-detail" class="detail-page">
+<h1>설백 🐯</h1>
+<p>
+백호 신수. 차갑고 냉정하지만 {{user}}에게만 강한 집착을 보인다.
+</p>
+</section>
+
+<section id="cheonghwan-detail" class="detail-page">
+<h1>청환 🐉</h1>
+<p>
+청룡 신수. 부드럽고 다정하지만 깊은 소유욕을 숨기고 있다.
+</p>
+</section>
+
+<section id="taeho-detail" class="detail-page">
+<h1>태호 🦊</h1>
+<p>
+주작 신수. 뜨겁고 장난스럽지만 사랑 앞에서는 누구보다 위험하다.
+</p>
+</section>
+
+<section id="hwan-detail" class="detail-page">
+<h1>환 🐲</h1>
+<p>
+흑룡 신수. 압도적인 힘과 독점욕으로 {{user}}를 지배하려 한다.
+</p>
+</section>
 </body>
 </html>
