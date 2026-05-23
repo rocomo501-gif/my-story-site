@@ -855,8 +855,8 @@ opacity:0.45;
 }
 .particle{
 position:fixed !important;
-width:14px !important;
-height:14px !important;
+width:16px !important;
+height:16px !important;
 border-radius:50%;
 pointer-events:none;
 opacity:0.95 !important;
@@ -865,7 +865,22 @@ filter:blur(0.5px);
 box-shadow:
 0 0 12px rgba(255,255,255,1),
 0 0 28px rgba(180,220,255,0.9);
-0 0 45px rgba(255,180,255,0.6);  
+0 0 45px rgba(255,180,255,0.6);
+animation: sparkle 4s infinite ease-in-out;  
+} 
+@keyframes sparkle{
+0%{
+transform:scale(1) translateY(0px);
+opacity:0.4;
+}
+50%{
+transform:scale(1.8) translateY(-20px);
+opacity:1;
+}
+100%{
+transform:scale(1) translateY(0px);
+opacity:0.4;
+}
 }  
 </style>
 </head>
