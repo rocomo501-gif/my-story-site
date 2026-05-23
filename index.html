@@ -570,7 +570,35 @@ box-shadow:
 0 0 35px rgba(123,135,255,0.65),
 0 0 90px rgba(123,135,255,0.28);
 }
+#music-toggle{
+position:fixed;
+bottom:20px;
+right:20px;
+z-index:9999;
 
+background:rgba(20,20,30,0.75);
+backdrop-filter:blur(10px);
+
+border:1px solid rgba(255,255,255,0.15);
+color:white;
+
+padding:12px 18px;
+border-radius:14px;
+
+font-size:15px;
+cursor:pointer;
+
+box-shadow:
+0 0 20px rgba(120,160,255,0.25);
+
+transition:0.3s;
+}
+
+#music-toggle:hover{
+transform:scale(1.08);
+box-shadow:
+0 0 35px rgba(120,160,255,0.45);
+}
 .fade-up{
 opacity:1;
 transform:
@@ -1140,18 +1168,31 @@ loading.style.display = "none";
 },2200);
 
 });  
-</script>
- <audio id="bgm" autoplay loop>
+
+ 
+</script> 
+<audio id="bgm" loop>
   <source src="bgm.mp3" type="audio/mpeg">
 </audio>
 
+<button id="music-toggle">🎵 BGM</button>
+
 <script>
-document.addEventListener("click", () => {
-  const bgm = document.getElementById("bgm");
+const bgm = document.getElementById("bgm");
+const musicBtn = document.getElementById("music-toggle");
+
+musicBtn.addEventListener("click", () => {
   bgm.volume = 0.35;
-  bgm.play();
-}, { once:true });
-</script> 
+
+  if (bgm.paused) {
+    bgm.play();
+    musicBtn.innerHTML = "🔊 ON";
+  } else {
+    bgm.pause();
+    musicBtn.innerHTML = "🎵 BGM";
+  }
+});
+</script>  
 </body>
 </html>
 
