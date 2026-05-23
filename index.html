@@ -1141,6 +1141,17 @@ loading.style.display = "none";
 
 });  
 </script>
+ <audio id="bgm" autoplay loop>
+  <source src="배경음악.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+document.addEventListener("click", () => {
+  const bgm = document.getElementById("bgm");
+  bgm.volume = 0.35;
+  bgm.play();
+}, { once:true });
+</script> 
 </body>
 </html>
 
