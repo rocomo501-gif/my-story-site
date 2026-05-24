@@ -1209,6 +1209,7 @@ onclick="openMythPopup('설백신수화.png')">
 <!-- 청환 -->
 
 <div class="card fade-up cheonghwan-card" id="cheonghwan">
+onclick="openMythPopup('청환신수화.png')">  
 
 <img src="media_1779269125 (3).png">
 
@@ -1260,6 +1261,7 @@ onclick="openMythPopup('설백신수화.png')">
 <!-- 태호 -->
 
 <div class="card fade-up taeho-card" id="taeho">
+onclick="openMythPopup('태호신수화.png')">  
 
 <img src="media_1779269584 (3).png">
 
@@ -1311,6 +1313,7 @@ onclick="openMythPopup('설백신수화.png')">
 <!-- 환 -->
 
 <div class="card fade-up hwan-card" id="hwan">
+onclick="openMythPopup('환신수화.png')"  
 
 <img src="media_1779278938 (1).png">
 
@@ -1525,6 +1528,13 @@ musicBtn.addEventListener("click", () => {
     musicBtn.innerHTML = "🎵 BGM";
   }
 });
+function openMythPopup(imgSrc){
+    const popup = document.getElementById("myth-popup");
+    const popupImg = document.getElementById("myth-popup-img");
+
+    popupImg.src = imgSrc;
+    popup.style.display = "flex";
+}  
 </script>
 <div id="myth-popup" class="myth-popup" onclick="closeMythPopup()">
   <img id="myth-popup-img" src="">
