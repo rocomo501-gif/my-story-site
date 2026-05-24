@@ -737,7 +737,58 @@ animation:
 seolAura 6s ease-in-out infinite;
 pointer-events:none;
 }
+.seolbaek-card,
+.cheonghwan-card,
+.taeho-card,
+.hwan-card{
+position:relative;
+overflow:hidden;
+}
 
+.seolbaek-card::after{
+content:'';
+position:absolute;
+inset:0;
+background:url('설백신수화.png') center/cover;
+opacity:0.12;
+z-index:0;
+filter:blur(2px);
+}
+
+.cheonghwan-card::after{
+content:'';
+position:absolute;
+inset:0;
+background:url('청환신수화.png') center/cover;
+opacity:0.10;
+z-index:0;
+filter:blur(2px);
+}
+
+.taeho-card::after{
+content:'';
+position:absolute;
+inset:0;
+background:url('태호신수화.png') center/cover;
+opacity:0.10;
+z-index:0;
+filter:blur(2px);
+}
+
+.hwan-card::after{
+content:'';
+position:absolute;
+inset:0;
+background:url('환신수화.png') center/cover;
+opacity:0.10;
+z-index:0;
+filter:blur(2px);
+}
+
+.card-content{
+position:relative;
+z-index:2;
+}
 @keyframes seolAura{
 0%{
 transform:scale(1)
