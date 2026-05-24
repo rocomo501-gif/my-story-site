@@ -1189,6 +1189,45 @@ background-position:80px 140px, -100px 120px, 140px -80px;
   box-shadow:
     0 0 30px rgba(255,220,120,0.2),
     0 0 90px rgba(120,100,40,0.25);
+} 
+/* 성역 전용 색광 */
+
+#sanctuary .relic-card:nth-child(1){
+  box-shadow:
+    0 0 35px rgba(220,240,255,0.28),
+    0 0 90px rgba(180,220,255,0.18);
+}
+
+#sanctuary .relic-card:nth-child(2){
+  box-shadow:
+    0 0 35px rgba(80,180,255,0.30),
+    0 0 100px rgba(0,140,255,0.20);
+}
+
+#sanctuary .relic-card:nth-child(3){
+  box-shadow:
+    0 0 35px rgba(255,120,120,0.30),
+    0 0 100px rgba(255,60,60,0.20);
+}
+
+#sanctuary .relic-card:nth-child(4){
+  box-shadow:
+    0 0 35px rgba(255,220,120,0.22),
+    0 0 100px rgba(120,100,40,0.28);
+}
+
+/* 성역 hover 효과 */
+
+#sanctuary .relic-card:hover{
+  transform:
+    translateY(-12px)
+    scale(1.03);
+
+  box-shadow:
+    0 0 45px rgba(255,255,255,0.25),
+    0 0 120px rgba(180,220,255,0.22);
+
+  filter:brightness(1.08);
 }  
 </style> 
 
@@ -1209,6 +1248,7 @@ background-position:80px 140px, -100px 120px, 140px -80px;
 <a href="#world">세계관</a>
 <a href="#characters">신수</a>
 <a href="#relics">유물</a>  
+<a href="#sanctuary">성역</a>  
 <a href="#start">시작</a>
 
 </nav>
