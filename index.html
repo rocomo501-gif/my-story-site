@@ -1229,6 +1229,48 @@ background-position:80px 140px, -100px 120px, 140px -80px;
 
   filter:brightness(1.08);
 }  
+/* 계약 섹션 전용 디자인 */
+
+#contract .relic-card{
+  background:
+    linear-gradient(135deg, rgba(40,15,60,0.78), rgba(5,5,18,0.88));
+  border:1px solid rgba(210,160,255,0.28);
+  box-shadow:
+    0 0 35px rgba(180,100,255,0.25),
+    inset 0 0 45px rgba(255,255,255,0.06);
+}
+#contract .relic-image{
+  transition:
+    transform 0.5s ease,
+    filter 0.5s ease,
+    box-shadow 0.5s ease;
+}
+
+#contract .relic-card:hover .relic-image{
+  transform:scale(1.05);
+  filter:brightness(1.12);
+  box-shadow:
+    0 0 35px rgba(210,160,255,0.4),
+    0 0 80px rgba(120,60,255,0.25);
+}
+#contract .relic-card:hover{
+  transform:translateY(-12px) scale(1.03);
+  box-shadow:
+    0 0 45px rgba(210,160,255,0.38),
+    0 0 120px rgba(120,60,255,0.25);
+  filter:brightness(1.08);
+}
+
+#contract .relic-card h3{
+  color:#f2ddff;
+  text-shadow:
+    0 0 18px rgba(220,160,255,0.75),
+    0 0 35px rgba(120,80,255,0.45);
+}
+
+#contract .relic-card p{
+  color:rgba(255,245,255,0.9);
+}  
 </style> 
 
 </head>
@@ -1664,6 +1706,28 @@ class="relic-image">
 </p>
 
 </div>
+
+</div>
+
+</section>  
+<section id="start" class="fade-up">
+
+<h2 class="section-title">운명의 시작</h2>
+
+<div class="start-box">
+
+<p class="start-text">
+신수의 심장이 반응하기 시작했다.
+네 명의 신수들이
+계약자를 기다리고 있다.
+
+이제,
+금기의 운명 속으로 들어갈 시간이다.
+</p>
+
+<a href="#" class="start-button">
+계약 시작하기
+</a>
 
 </div>
 
