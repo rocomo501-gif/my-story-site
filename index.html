@@ -1152,8 +1152,8 @@ background-position:80px 140px, -100px 120px, 140px -80px;
 
 <!-- 설백 -->
 
-<div class="card fade-up seolbaek-card" id="seolbaek">
-
+<div class="card fade-up seolbaek-card"
+onclick="openMythPopup('설백신수화.png')">
 <img src="media_1779264660 (1).png">
 
 <div class="card-content">
@@ -1525,7 +1525,10 @@ musicBtn.addEventListener("click", () => {
     musicBtn.innerHTML = "🎵 BGM";
   }
 });
-</script>  
+</script>
+<div id="myth-popup" class="myth-popup" onclick="closeMythPopup()">
+  <img id="myth-popup-img" src="">
+</div>  
 </body>
 </html>
 
