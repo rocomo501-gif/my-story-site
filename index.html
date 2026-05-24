@@ -1552,6 +1552,12 @@ function openMythPopup(imgSrc){
 
     popupImg.src = imgSrc;
     popup.style.display = "flex";
+}
+
+function closeMythPopup(){
+    const popup = document.getElementById("myth-popup");
+    popup.style.display = "none";
+}
 }  
 </script>
 <div id="myth-popup" class="myth-popup" onclick="closeMythPopup()">
